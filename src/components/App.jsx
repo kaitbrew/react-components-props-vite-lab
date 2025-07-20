@@ -6,10 +6,11 @@ import ArticleList from "./ArticleList.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header name={blogData.name} />
       <About image={blogData.image} about={blogData.about} />
-      <ArticleList blogData={blogData} />
+      <main>
+      <ArticleList blogData={blogData} /></main>
     </div>
   );
 }
